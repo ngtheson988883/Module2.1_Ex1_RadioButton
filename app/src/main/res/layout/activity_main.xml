@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Các kiểu lập trình sự kiện"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:background="@color/green"
+        android:textColor="@color/white"
+        android:paddingTop="8dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số A"/>
+        <EditText
+            android:id="@+id/text_numA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số B"/>
+        <EditText
+            android:id="@+id/text_numB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/label_result"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingTop="8dp"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:background="@color/green"
+        />
+    <RadioGroup
+        android:id="@+id/rdg_cal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="30dp">
+        <RadioButton
+            android:id="@+id/rd_plus"
+            android:button="@null"
+            android:drawableTop="@android:drawable/btn_radio"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="+"
+            android:textSize="25dp"/>
+        <RadioButton
+            android:button="@null"
+            android:drawableTop="@android:drawable/btn_radio"
+            android:gravity="center"
+            android:id="@+id/rd_minus"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="-"
+            android:textSize="25dp"/>
+        <RadioButton
+            android:button="@null"
+            android:drawableTop="@android:drawable/btn_radio"
+            android:gravity="center"
+            android:id="@+id/rd_mutil"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="*"
+            android:textSize="25dp"/>
+        <RadioButton
+            android:button="@null"
+            android:drawableTop="@android:drawable/btn_radio"
+            android:gravity="center"
+            android:id="@+id/rd_divide"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="/"
+            android:textSize="25dp"/>
+
+    </RadioGroup>
+    <Button
+        android:id="@+id/btn_cal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tính kết quả"/>
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thoát chương trình"/>
+</LinearLayout>
